@@ -8,12 +8,12 @@ Run the following command:
 
 ```sh
 npx create-turbo@latest
-```
+``` 
 
 ## What's inside? 
   
 This Turborepo includes the following packages/apps:
-
+ 
 ### Apps and Packages
 
 - `docs`: a [Next.js](https://nextjs.org/) app
