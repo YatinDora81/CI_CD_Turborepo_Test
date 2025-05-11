@@ -6,6 +6,9 @@
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "start:ws": "pnpm --filter @repo/ws-server start",
+    "start:http": "pnpm --filter @repo/http-server start",
+    "start:web": "pnpm --filter web start",
     "check-types": "turbo run check-types"
   },
   "devDependencies": {
