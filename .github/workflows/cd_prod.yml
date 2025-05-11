@@ -18,4 +18,4 @@ jobs:
           key: ${{ secrets.PROD_KEY }}
           port: ${{ secrets.PORT }}
           script:  |
-            "./shell.sh"
+            ./scripts/deploy.sh
