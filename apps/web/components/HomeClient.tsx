@@ -10,7 +10,7 @@ function HomeClient() {
   console.log("Ws" + WS_BASE_URL);
   
 
-    const [message, setMessages] = useState<string[]>(["lets start the CI CD😊"])
+    const [message, setMessages] = useState<string[]>(["lets start the CvuibhI CD😊"])
     const [socket, setSocket] = useState<WebSocket | null>(null)
     const [messageInput, setMessageInput] = useState<string>("")
     const [httpInput, setHttpInput] = useState<string>("")
@@ -44,13 +44,16 @@ function HomeClient() {
 
 
     return (
-    <div className=" bg-zinc-950 w-full h-screen flex justify-center items-center">
-      <div className=" w-[50%] h-full">
-        <Messages messages={message} />
-      </div>
-      <div className=" w-[50%] h-screen flex flex-col justify-evenly items-center gap-4 bg-zinc-900">
-        <Send messageInput={messageInput} setMessageInput={setMessageInput} sendMessageHandler={sendMessageHandler} />
-        <HttpInput httpInput={httpInput} setHttpInput={setHttpInput} setMessages={setMessages} />
+    <div className="bg-zinc-900 relative w-full h-screen flex flex-col justify-center items-center">
+      <h1 className="text-white absolute top-[1em] bg-zinc-800/50 text-3xl my-4 rounded-4xl backdrop-blur-xl" style={{padding : "10px" , paddingInline : "30px" }}>This is CI CD 😎</h1>
+      <div className="bg-zinc-950 w-full h-full flex justify-center items-center">
+        <div className="w-[50%] h-full">
+          <Messages messages={message} />
+        </div>
+        <div className="w-[50%] h-full flex flex-col justify-evenly items-center gap-4 bg-zinc-900">
+          <Send messageInput={messageInput} setMessageInput={setMessageInput} sendMessageHandler={sendMessageHandler} />
+          <HttpInput httpInput={httpInput} setHttpInput={setHttpInput} setMessages={setMessages} />
+        </div>
       </div>
     </div>
   )

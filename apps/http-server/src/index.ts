@@ -10,8 +10,8 @@ app.use(express.json())
 app.use(cors())
 
 
-app.get("/get", (req, res) => {
-    const usersCount = prismaClient.user.count()
+app.get("/get",async (req, res) => {
+    const usersCount =await prismaClient.user.count()
     res.status(200).json({
         success: true,
         data: usersCount,
@@ -20,9 +20,9 @@ app.get("/get", (req, res) => {
     })
 })
 
-app.post("/post", (req, res) => {
+app.post("/post",async (req, res) => {
     const { name, pass, age } = req.body
-    const u = prismaClient.user.create({
+    const u =await prismaClient.user.create({
         data: {
             name, pass, age
         }
