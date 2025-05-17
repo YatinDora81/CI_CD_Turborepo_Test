@@ -45,7 +45,7 @@ function HomeClient() {
 
     return (
     <div className="bg-zinc-900 relative w-full h-screen flex flex-col justify-center items-center">
-      <h1 className="text-white absolute top-[1em] bg-zinc-800/50 text-3xl my-4 rounded-4xl backdrop-blur-xl" style={{padding : "10px" , paddingInline : "30px" }}>This is CI CD 😎</h1>
+      <h1 className="text-white absolute top-[1em] bg-zinc-800/50 text-3xl my-4 rounded-4xl backdrop-blur-xl" style={{padding : "10px" , paddingInline : "30px" }}>This is Only CI Not CD 😎</h1>
       <div className="bg-zinc-950 w-full h-full flex justify-center items-center">
         <div className="w-[50%] h-full">
           <Messages messages={message} />
